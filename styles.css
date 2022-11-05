@@ -2,3 +2,7 @@ body {
   font-family: "Amiko";
   font-size: 22px;
 }
+
+h1{
+  margin: 1rem;
+}
