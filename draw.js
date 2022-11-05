@@ -37,13 +37,12 @@ function draw(size) {
   const bodyWidth = size * 3;
 
   //legs
-  two.makeRectangle(middleX - size * 2, middleY + size - 5, size *4/9, size *4/3);
-  two.makeRectangle(middleX + size * 2, middleY + size - 5, size *4/9, size *4/3);
+  two.makeRectangle(middleX - size * 2, middleY + size - 5, size * 4 / 9, size * 4 / 3);
+  two.makeRectangle(middleX + size * 2, middleY + size - 5, size * 4 / 9, size * 4 / 3);
 
   //wings and body
   const wing2 = makeTriangle(two, bodyWidth, size * 2);
-
-  wing2.position.set(middleX - size/2, middleY + size / 2);
+  wing2.position.set(middleX - size / 2, middleY + size / 2);
   wing2.rotation = (-PI * 2) / 3;
 
   const body = two.makeEllipse(middleX, middleY, bodyWidth, size);
