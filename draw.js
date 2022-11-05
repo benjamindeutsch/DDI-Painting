@@ -45,8 +45,8 @@ function draw(size) {
   beak.position.set(headX + size - 5, headY - size / 4);
 
   //legs
-  two.makeRectangle(middleX - size * 2, middleY + size - 5, size / 3, size / 1.5);
-  two.makeRectangle(middleX + size * 2, middleY + size - 5, size / 3, size / 1.5);
+  two.makeRectangle(middleX - size * 2, middleY + size - 5, size *4/9, size *4/3);
+  two.makeRectangle(middleX + size * 2, middleY + size - 5, size *4/9, size *4/3);
 
   //wings and body
   const wing2 = makeTriangle(two, bodyWidth, size * 2);
