@@ -51,7 +51,7 @@ function draw(size) {
   //wings and body
   const wing2 = makeTriangle(two, bodyWidth, size * 2);
 
-  wing2.position.set(middleX, middleY + size / 2);
+  wing2.position.set(middleX - size/2, middleY + size / 2);
   wing2.rotation = (-PI * 2) / 3;
 
   const body = two.makeEllipse(middleX, middleY, bodyWidth, size);
