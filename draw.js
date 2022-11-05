@@ -36,14 +36,6 @@ function draw(size) {
   const middleY = two.height / 2;
   const bodyWidth = size * 3;
 
-  //head
-  const headX = middleX + bodyWidth + size / 2;
-  const headY = middleY - size;
-  const beak = makeTriangle(two, size, size / 2);
-  two.makeCircle(headX, headY, size);
-  two.makeRectangle(headX + size / 3, headY - size / 3, size / 2, size / 2);
-  beak.position.set(headX + size - 5, headY - size / 4);
-
   //legs
   two.makeRectangle(middleX - size * 2, middleY + size - 5, size *4/9, size *4/3);
   two.makeRectangle(middleX + size * 2, middleY + size - 5, size *4/9, size *4/3);
@@ -60,6 +52,14 @@ function draw(size) {
   const wing1 = makeTriangle(two, bodyWidth, size * 2, "#FFFFFF");
   wing1.position.set(middleX, middleY - size / 2);
   wing1.rotation = -PI / 3;
+
+  //head
+  const headX = middleX + bodyWidth + size / 2;
+  const headY = middleY - size;
+  const beak = makeTriangle(two, size, size / 2);
+  two.makeCircle(headX, headY, size);
+  two.makeRectangle(headX + size / 3, headY - size / 3, size / 2, size / 2);
+  beak.position.set(headX + size - 5, headY - size / 4);
 
   two.update();
 }
