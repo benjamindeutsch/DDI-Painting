@@ -54,7 +54,7 @@ function draw(size) {
   wing1.rotation = -PI / 3;
 
   //head
-  const headX = middleX + bodyWidth + size / 2;
+  const headX = middleX + bodyWidth + size / 5;
   const headY = middleY - size;
   const beak = makeTriangle(two, size, size / 2);
   two.makeCircle(headX, headY, size);
